@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50rem;
+    background-color: rgb(0, 0, 20);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem;
+}
+
+tr, td, th {
+    border: 1px solid white;
+    padding: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    text-align: center;
+    display: block;
+}
+
+li:nth-child(even) {
+    color:rgb(175, 175, 175);
+}
+
+#db-content {
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#joke-content {
+    color: white;
+    text-align:center;
+    font-size:larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 2rem;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+#comment-submit-button {
+    margin: 0.5rem;
+}
+
+#comment-label {
+    color: white;
+    margin: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#comment {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    resize: none;
+    box-sizing: border-box;
+}
+
+#show-db-content-button {
+    margin: 1rem;
+}
+
+.button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+    padding: 0.3rem;
+}

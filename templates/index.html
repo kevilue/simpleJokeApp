@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- jQuery from Google Hosted Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Joke-Generator</title>
+</head>
+<body>
+    <h1>Want to hear a joke?</h1>
+    <button class="button" id="get-joke-button" onclick="getJoke()">Get joke!</button>
+    <div id="joke-content"></div>
+    <br><br>
+    <button class="button" id="save-joke-button" onclick="postJoke()" style="display:none">Save the joke to the database!</button>
+    <form id="comment-form" style="display:none">
+        <label id="comment-label" for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        <button class="button" id="comment-submit-button" type="submit">Submit</button>
+    </form>
+    <button class="button" id="show-db-content-button" onclick="loadDatabase()">Show jokes in database!</button>
+    <div id="db-content"></div>
+</body>
+<script src="index.js"></script>
+</html>
