@@ -104,10 +104,6 @@ def post_comment():
             return "Comment added"
         else: return "Invalid request size"
 
-# TODO : Add favicon.ico
-# @app.route('/favicon.ico')
-# def favicon():
-#     return send_from_directory("static", 'favicon.ico')
-
+# Run
 if __name__ == "__main__":
-    app.run(debug=True, port=8080)
+    app.run(port=8080, host="0.0.0.0")
