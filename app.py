@@ -10,7 +10,7 @@ try:
 except:
     print("No .env file found.")
 try:
-    MONGO_URI = os.environ["MONGO_URI"]
+    MONGO_URI = os.environ.get("MONGO_URI")
 except:
     print("No MONGO_URI found in .env file -> using localhost address.")
     MONGO_URI = "mongodb://localhost:27017/"
