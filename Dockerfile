@@ -15,4 +15,4 @@ ENV PYTHONPATH=/app
 
 EXPOSE 8080
 
-CMD ["python", "app.py"]
+CMD ["gunicorn", "--config", "gunicorn_config.py", "app:app"]
