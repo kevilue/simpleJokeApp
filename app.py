@@ -17,9 +17,13 @@ except:
 
 app = Flask(__name__)
 
+# MongoDB connection
 client = pymongo.MongoClient(MONGO_URI)
 db = client["jokes"]
-collection = db["pub"]
+# Get name of collection from environment variable
+# If not found, use default name "pub" for public storage
+collection_name = os.environ.get("MONGO_COLLECTION", "pub")
+collection = db[collection_name]
 
 @app.route("/", methods=["GET", "POST"])
 def index():
