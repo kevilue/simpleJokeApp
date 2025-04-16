@@ -1,5 +1,5 @@
 # simpleJokeApp
-Repository for the simple joke web application used by my project work for "Cloud Computing II" at the Corporate State University (DHBW) Stuttgart.
+Repository for the simple joke web application used by my project work for "Cloud Computing II" at the Baden-Wuerttemberg Cooperative State University (DHBW) Stuttgart.
 
 # Purpose
 The purpose of this repository is to be used for the virtual machines provisioned by Terraform. This repository is downloaded, extracted and used by these VMs over Ansible to provide a public instance of the simple joke web app.
