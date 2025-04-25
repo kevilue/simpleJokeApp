@@ -2,3 +2,4 @@ pymongo
 Flask
 python-dotenv
 Gunicorn
+pytest
